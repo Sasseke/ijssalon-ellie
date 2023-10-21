@@ -6,9 +6,6 @@ def decoreer(tekst=""):
     print(lengte * "*")
     print()
 
-bedrag = int(input("Welk bedrag zit er in de fooienpot?"))
-personen = int(input("Over hoeveel mensen moet de pot verdeeld worden?"))
-
 def fooi_pp(bedrag,personen):
     try:
        bedrag_pp = bedrag / personen
@@ -16,4 +13,8 @@ def fooi_pp(bedrag,personen):
        bedrag_pp = "??"
     return f"Het bedrag per persoon is {bedrag_pp} euro."
 
-print(fooi_pp(bedrag,personen))
+def onderstreep(tekst=""):
+    uit = []
+    uit.append(tekst)
+    uit.append(len(tekst) * "=")
+    return uit
